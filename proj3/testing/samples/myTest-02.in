@@ -1,0 +1,23 @@
+I setup2.inc
+> branch branch1
+<<<
+> rm f.txt
+<<<
+> commit "remove f.txt"
+<<<
+> branch branch2
+<<<
+> rm g.txt
+<<<
+> commit "remove g.txt"
+<<<
+* f.txt
+* g.txt
+> checkout branch2
+<<<
+* f.txt
+= g.txt notwug.txt
+> checkout branch1
+<<<
+= f.txt wug.txt
+= g.txt notwug.txt

@@ -1,0 +1,13 @@
+#* java -ea tablut.Main
+# Check that initial board is right.
+manual white
+manual white
+dump
+h5-6
+dump
+e6-g
+dump
+f9-6
+dump
+undo
+dump

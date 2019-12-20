@@ -1,0 +1,19 @@
+I prelude1.inc
++ 1.txt lin.txt
++ 2.txt hui.txt
++ 3.txt xuan.txt
+> add 1.txt
+<<<
+> commit "Add 1.txt"
+<<<
+> add 2.txt
+<<<
+> commit "Add 2.txt"
+<<<
+> add 3.txt
+<<<
+> commit "Add 3.txt"
+<<<
+> global-log
+${ARBLINES}
+<<<*

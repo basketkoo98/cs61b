@@ -1,0 +1,8 @@
+#* java -ea tablut.Main
+# Check that move commands work correctly.
+manual white
+manual white
+h5-6
+dump
+new
+dump

@@ -1,0 +1,44 @@
+I prelude1.inc
++ 1.txt lin.txt
++ 2.txt hui.txt
++ 3.txt xuan.txt
+> branch lin
+<<<
+> checkout lin
+<<<
+> add 1.txt
+<<<
+> commit "add lin"
+<<<
+> checkout master
+<<<
+>  branch hui
+<<<
+> checkout hui
+<<<
+> add 2.txt
+<<<
+> commit "add hui"
+<<<
+> checkout master
+<<<
+>  branch xuan
+<<<
+> checkout xuan
+<<<
+> add 3.txt
+<<<
+> commit "add xuan"
+<<<
+> merge hui
+<<<
+* 1.txt
+= 2.txt hui.txt
+= 3.txt xuan.txt
+> checkout lin
+<<<
+> merge hui
+<<<
+= 1.txt lin.txt
+= 2.txt hui.txt
+* 3.txt

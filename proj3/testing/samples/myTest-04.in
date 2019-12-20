@@ -1,0 +1,58 @@
+I setup2.inc
+> branch branch1
+<<<
+> rm f.txt
+<<<
+> commit "remove f.txt"
+<<<
+> branch branch2
+<<<
+> rm g.txt
+<<<
+> commit "remove g.txt"
+<<<
+> status
+=== Branches ===
+*master
+branch1
+branch2
+
+
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
+> rm-branch branch2
+<<<
+> status
+=== Branches ===
+*master
+branch1
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
+> checkout branch2
+No such branch exists.
+<<<
+> rm-branch branch1
+<<<
+I blank-status.inc
+> checkout branch1
+No such branch exists.
+<<<
+> checkout master
+No need to checkout the current branch.
+<<<

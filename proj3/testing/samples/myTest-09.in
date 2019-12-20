@@ -1,0 +1,50 @@
+I prelude1.inc
+> branch branch1
+<<<
++ 1.txt lin.txt
++ 2.txt hui.txt
++ 3.txt xuan.txt
++ 4.txt hate.txt
++ 5.txt code.txt
+> add 1.txt
+<<<
+> add 2.txt
+<<<
+> branch branch1
+A branch with that name already exists.
+<<<
+> status
+=== Branches ===
+*master
+branch1
+
+=== Staged Files ===
+1.txt
+2.txt
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+5.txt
+4.txt
+3.txt
+
+<<<
+> checkout branch1
+<<<
+> status
+=== Branches ===
+*branch1
+master
+
+=== Staged Files ===
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

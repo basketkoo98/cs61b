@@ -1,0 +1,25 @@
+I setup2.inc
+> rm f.txt
+<<<
+* f.txt
+> commit "remove f.txt"
+<<<
++ f.txt notwug.txt
+> add f.txt
+<<<
+> commit "changed f.txt into notwug.txt"
+<<<
+> rm g.txt
+<<<
+> commit "remove g.txt"
+<<<
+= f.txt notwug.txt
+* g.txt
++ g.txt wug.txt
+> add g.txt
+<<<
+> commit "changed g.txt into wug.txt"
+<<<
+= g.txt wug.txt
+= f.txt notwug.txt
+

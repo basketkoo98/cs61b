@@ -1,0 +1,69 @@
+I setup2.inc
+> branch branch1
+<<<
+> rm f.txt
+<<<
+> commit "remove f.txt"
+<<<
+> branch branch2
+<<<
+> rm g.txt
+<<<
+> commit "remove g.txt"
+<<<
+D HEADER "commit [a-f0-9]+"
+> log
+===
+${HEADER}
+${DATE}
+remove g.txt
+
+===
+${HEADER}
+${DATE}
+remove f.txt
+
+===
+${HEADER}
+${DATE}
+Two files
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
+> checkout branch1
+<<<
+> log
+===
+${HEADER}
+${DATE}
+Two files
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*
+> checkout branch2
+<<<
+> log
+===
+${HEADER}
+${DATE}
+remove f.txt
+
+===
+${HEADER}
+${DATE}
+Two files
+
+===
+${HEADER}
+${DATE}
+initial commit
+
+<<<*

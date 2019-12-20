@@ -1,0 +1,67 @@
+I prelude1.inc
++ 1.txt lin.txt
++ 2.txt hui.txt
++ 3.txt xuan.txt
+> add 1.txt
+<<<
+> add 2.txt
+<<<
+> add 3.txt
+<<<
+> commit "linhuixuan"
+<<<
+> branch branch1
+<<<
++ 1.txt lin.txt
++ 2.txt hate.txt
++ 3.txt code.txt
+> add 1.txt
+<<<
+> add 2.txt
+<<<
+> add 3.txt
+<<<
+> commit "linhatecode"
+<<<
+= 1.txt lin.txt
+= 2.txt hate.txt
+= 3.txt code.txt
+> checkout branch1
+<<<
+= 1.txt lin.txt
+= 2.txt hui.txt
+= 3.txt xuan.txt
+> branch branch2
+<<<
+> rm 1.txt
+<<<
+> rm 2.txt
+<<<
+> status
+=== Branches ===
+*branch1
+master
+branch2
+
+=== Staged Files ===
+
+=== Removed Files ===
+1.txt
+2.txt
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<
+> commit "remove lin and hui"
+<<<
+> merge master
+Encountered a merge conflict.
+<<<
+> checkout branch2
+<<<
+> merge master
+Current branch fast-forwarded.
+<<<
+

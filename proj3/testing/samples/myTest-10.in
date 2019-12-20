@@ -1,0 +1,29 @@
+I prelude1.inc
++ 1.txt lin.txt
++ 2.txt hui.txt
++ 3.txt xuan.txt
+> branch branch1
+<<<
+> add 1.txt
+<<<
+> add 2.txt
+<<<
+> commit "linhui"
+<<<
+> checkout branch1
+<<<
+> branch branch2
+<<<
+> add 3.txt
+<<<
+> commit "xuan"
+<<<
+> merge master
+<<<
+> log
+===
+${COMMIT_HEAD}
+Merged master into branch1\.
+
+${ARBLINES}
+<<<*
